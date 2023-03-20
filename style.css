@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    height: 50px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px 0;
+    gap: 10px;
+}
+.button-signin {
+    margin: 20px 20px 0 0;
+    padding: 0 5px;
+    height: 50%;
+    font-weight: bold;
+    background-color: rgb(240, 168, 34);
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-signin:hover {
+    transform: scale(1.1);
+    background-color: antiquewhite;
+}
+/*ekran küçülünce görünür hale getirecem*/
+i {
+    display: none;
+    align-self: center;
+}
+/*ekran küçülünce nav itemlerini gizleyeceğim*/
+.navItems {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.navItems:hover {
+    transform: scale(1.1);
+}
+a {
+    color: black;
+}
+/*sayfa içeriği*/
+.container-bg {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+/*Sayfadaki turunculuğu verdiğim divi absolute yapıp 
+z dğerini 0 vererek aşağıda kalmasını sağladım
+width değerinede % vererek responsive özellik vermis oldum */
+.container-orange {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: orange;
+    z-index: 0;
+}
+.container-details {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*Text ve card divlerine width %60 ve %40 vererek 
+detail sayfasına tam sığmalarını sağladım.*/
+.container-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-big {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 20px;
+    text-shadow: 2px 2px 8px rgb(85, 60, 13);
+}
+.underline {
+    position: absolute;
+    margin-bottom: 160px;
+    margin-left: 18px;
+    height: 1px;
+    width: 42%;
+    background-color: black;
+}
+.underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.text-big:hover+.underline::before {
+    background-color: orange;
+    border: 1px solid antiquewhite;
+    height: 4px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: 2s ease;
+}
+.text-small {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0 16%;
+    text-indent: 15px;
+    text-align: justify;
+}
+.btn-more {
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-color: rgb(163, 107, 3);
+    background-color: orange;
+    margin-right: 50%;
+}
+.btn-more:hover {
+    background-color: rgb(206, 140, 19);
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.emoji {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+}
+/*card alanı*/
+.container-card {
+    margin-right: 150px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cards-top, .cards-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cards {
+    width: 150px;
+    height: 200px;
+    border: 2px solid orange;
+    box-shadow: 3px 3px 15px 1px black;
+}
+.cards:hover{
+    transform: scale(1.01);
+    box-shadow: 3px 3px 15px 1px orange;
+    transition: 0.2s ease-in;
+}
+.cards:hover .sp-text{
+    transform: scale(1.1);
+    color: rgb(80, 54, 6);
+    margin-top: -20px;
+    transition: 0.2s ease-in;
+}
+.c1 {
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    background-image: url(images/pizza.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sp-text {
+    position: absolute;
+    margin-top: -16px;
+}
+.c2 {
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    background-image: url(images/pasta.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.c3 {
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    background-image: url(images/burger.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.c4 {
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    background-image: url(images/meet.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width:545px) {
+    /*header alanı*/
+    /*Ekran küçülünce nav elemanlarını ve butonu kaldırıp 
+    yerine menü iconunu koydum.*/
+    i {
+        display: inline-block;
+        margin: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .button-signin {
+        display: none;
+    }
+    /*conteiner alanı */
+    .container-orange {
+        width: 40%;
+    }
+    .container-text {
+        width: 90%;
+        position: absolute;
+
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    .text-big {
+        font-size: 50px;
+        font-weight: bolder;
+        margin: 10px 0px;
+    }
+    .text-small {
+        margin: 0 65% 0 10px;
+        text-indent: 0;
+
+    }
+    .btn-more {
+        margin-right: 70%;
+    }
+    .emoji {
+        margin-right: 390px;
+    }
+    .isvec-krali {
+        margin-right: 60%;
+    }
+    /*underline bölümü*/
+    .underline {
+
+        margin: 65px;
+        width: 100%;
+    }
+    /*card'lar bölümü*/
+    .container-card {
+        margin-left: 65%;
+        margin-top: 90px;
+    }
+    .cards-top,
+    .cards-bottom {
+        flex-direction: column;
+    }
+    .cards {
+        width: 240px;
+        height: 80px;
+        border: 2px solid orange;
+    }
+}
