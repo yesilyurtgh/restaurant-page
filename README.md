@@ -15,5 +15,5 @@ Eğitimimin 4. haftasına girerken, tek sayfalık basit bir restoran sayfası ya
 ![](https://github.com/yesilyurtgh/restaurant-page/blob/master/restaurant-page.gif)
 
 <h3>Screen Gif</h3>
-<img width=80% src="images/screen.gif">
+<img width=80% src="images/restaurant-page.gif">
 
