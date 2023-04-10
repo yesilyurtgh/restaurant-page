@@ -9,7 +9,7 @@ Eğitimimin 4. haftasına girerken, tek sayfalık basit bir restoran sayfası ya
 <ul>
 <li>Responsive özellik kazandırarak kuçuk ekran boyutunda  Navbar itemlerının gizlenip menu iconunun görünür hale gelmesini sağladım. </li>
 <li>Kuçuk ekran boyutunda cardların sıralanma ve boyutlarını değiştirdim.</li>
-<li>Eğitimde gördüğüm hover olunca X ekseninde ilerleyen underline çizgisini kullandım.</li>
+<li>Eğitimde gördüğüm hover olunca X ekseninde ilerleyen underline çizgisini kullandım .</li>
 </ul>
 
 
