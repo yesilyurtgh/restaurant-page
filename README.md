@@ -11,9 +11,8 @@ Eğitimimin 4. haftasına girerken, tek sayfalık basit bir restoran sayfası ya
 <li>Kuçuk ekran boyutunda cardların sıralanma ve boyutlarını değiştirdim.</li>
 <li>Eğitimde gördüğüm hover olunca X ekseninde ilerleyen underline çizgisini kullandım.</li>
 </ul>
-#my gif
-![](https://github.com/yesilyurtgh/restaurant-page/blob/master/restaurant-page.gif)
+
 
 <h3>Screen Gif</h3>
-<img width=80% src="images/restaurant-page.gif">
+<img width=80% src="images/screen-gif.gif">
 
