@@ -12,7 +12,7 @@ Eğitimimin 4. haftasına girerken, tek sayfalık basit bir restoran sayfası ya
 <li>Eğitimde gördüğüm hover olunca X ekseninde ilerleyen underline çizgisini kullandım.</li>
 </ul>
 #my gif
-![] (https://github.com/yesilyurtgh/restaurant-page/blob/master/restaurant-page.gif)
+![](https://github.com/yesilyurtgh/restaurant-page/blob/master/restaurant-page.gif)
 
 
 
